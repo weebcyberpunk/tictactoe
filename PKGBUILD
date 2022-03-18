@@ -1,6 +1,6 @@
 # Maintainer: GG weebcyberpunk@gmail.com
 pkgname=tictactoe
-pkgver=1.0.0
+pkgver=1.0.1
 pkgrel=2
 pkgdesc="The stupid terminal based tictactoe game"
 arch=("x86_64")
@@ -19,4 +19,5 @@ package() {
 	cd "$pkgname"
 	install -Dm755 tictactoe $pkgdir/usr/bin/tictactoe
 	install -Dm644 "help.txt" $pkgdir/usr/share/tictactoe/"help.txt"
+	install -Dm644 tictactoe.1 $pkgdir/usr/share/man/man1/tictactoe.1
 }

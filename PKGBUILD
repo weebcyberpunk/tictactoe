@@ -1,5 +1,5 @@
 # Maintainer: GG weebcyberpunk@gmail.com
-pkgname=tictactoe
+pkgname=tictactoe-git
 pkgver=1.0.1
 pkgrel=2
 pkgdesc="The stupid terminal based tictactoe game"

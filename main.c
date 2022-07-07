@@ -32,25 +32,25 @@ int help();
  * version 1.0.0
  */
 int main(int argc, char *argv[]) {
-	
-	int status = 0;
-	
-	if (argc == 1) {
+    
+    int status = 0;
+    
+    if (argc == 1) {
 
-		status = tictactoe();
+        status = tictactoe();
 
-	} else if (argc == 2) {
+    } else if (argc == 2) {
 
-		if ((strcmp(argv[1], "-c") == 0) || (strcmp(argv[1], "--computer") == 0)) status = tictacbot();
-		else if ((strcmp(argv[1], "-p") == 0) || (strcmp(argv[1], "--player") == 0)) status = tictactoe();
-		else status = help();
+        if ((strcmp(argv[1], "-c") == 0) || (strcmp(argv[1], "--computer") == 0)) status = tictacbot();
+        else if ((strcmp(argv[1], "-p") == 0) || (strcmp(argv[1], "--player") == 0)) status = tictactoe();
+        else status = help();
 
-	} else {
+    } else {
 
-		status = help();
+        status = help();
 
-	}
+    }
 
-	return(status);
+    return(status);
 
 }

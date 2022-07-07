@@ -1,15 +1,15 @@
 tictactoe
 
 Usage: 
-	tictactoe <arg>
+    tictactoe <arg>
 
 If called without args, start a human x human game.
 
 Args:
-	--computer or -c 	start human x computer game.
-	--player or -p 		start human x human game.
+    --computer or -c     start human x computer game.
+    --player or -p       start human x human game.
 
-	Any other arg pattern (except no args) will display this help
+    Any other arg pattern (except no args) will display this help
 
 
 Tictactoe is licensed under GNU GPLv3 and the source is avaiable at

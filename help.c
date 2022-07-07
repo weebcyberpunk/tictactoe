@@ -1,27 +1,27 @@
 #include<stdio.h>
 
 int help() {
-	FILE *help;
-	help = fopen("/usr/share/tictactoe/help.txt", "r");
+    FILE *help;
+    help = fopen("/usr/share/tictactoe/help.txt", "r");
 
-	if (help == NULL) {
-		printf("no help file on /usr/share/tictactoe/help.txt\n");
+    if (help == NULL) {
+        printf("no help file on /usr/share/tictactoe/help.txt\n");
 
-		return(1);
+        return(1);
 
-	}
+    }
 
-	for (;;) {
-		char c = getc(help);
+    for (;;) {
+        char c = getc(help);
 
-		if (c == EOF) break;
+        if (c == EOF) break;
 
-		printf("%c", c);
-	}
+        printf("%c", c);
+    }
 
-	printf("\n");
+    printf("\n");
 
-	fclose(help);
+    fclose(help);
 
-	return(0);
+    return(0);
 }
